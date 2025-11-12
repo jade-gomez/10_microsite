@@ -41,19 +41,6 @@ gsap.to(".screens", {
   ease: "sine.inOut",
 });
 
-// Animation des images
-tl.to(".top", { y: "-100%", ease: "none" }, 0)
-  .to(".bottom", { y: "100%", ease: "none" }, 0)
-  .to(
-    ".family-case",
-    {
-      width: 793,
-      height: 557,
-      ease: "none",
-    },
-    0
-  );
-
 // walking
 
 gsap.set([".walking-2", ".walking-3", ".walking-4"], {
@@ -72,3 +59,5 @@ gsap.to([".walking-2", ".walking-3", ".walking-4"], {
     start: "top 10%",
   },
 });
+
+// parallax
