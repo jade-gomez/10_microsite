@@ -55,12 +55,13 @@ tl.to(".top", { y: "-100%", ease: "none" }, 0)
   );
 
 // walking
-gsap.set([".carre-anim2", ".carre-anim3", ".carre-anim4"], {
+
+gsap.set([".walking-2", ".walking-3", ".walking-4"], {
   opacity: 0,
   y: 50,
 });
 
-gsap.to([".carre-anim2", ".carre-anim3", ".carre-anim4"], {
+gsap.to([".walking-2", ".walking-3", ".walking-4"], {
   opacity: 1,
   y: 0,
   duration: 1,
