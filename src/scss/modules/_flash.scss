@@ -1,0 +1,53 @@
+.flash-container {
+  position: relative;
+  width: 100%;
+}
+
+.flash-with {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 50%;
+  animation: clignotements 2s infinite;
+}
+
+@keyframes clignotements {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.1;
+  }
+}
+
+.round {
+  width: 54px;
+  height: 54px;
+  stroke: #833d74;
+  position: absolute;
+  top: 56%;
+  right: 22%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 1;
+  border: #833d74 solid 6px;
+  animation: pulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  from {
+    width: 54px;
+    height: 54px;
+    border: #833d74 solid 6px;
+  }
+  to {
+    width: 49px;
+    height: 49px;
+    border: #833d74 solid 5.7px;
+  }
+}

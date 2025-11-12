@@ -1,0 +1,25 @@
+.screen {
+  width: 100vh;
+}
+
+.scroll-horizontal {
+  border: 0.5px solid black;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.screens {
+  display: inline-flex;
+  border: 0.5px solid red;
+}
+
+.screens .screen {
+  width: 100vw;
+  /* height: 100vh;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid blue;
+  position: relative;
+}
