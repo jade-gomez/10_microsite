@@ -1,16 +1,19 @@
 .foliage img {
   width: 184px;
   position: absolute;
+  transform: scale(0.5);
 }
 
 .foliage-left {
   bottom: 0;
   left: 0;
+  transform-origin: bottom left;
 }
 
 .foliage-right {
   top: 0;
   right: 0;
+  transform-origin: top right;
 }
 
 .foliage svg {
