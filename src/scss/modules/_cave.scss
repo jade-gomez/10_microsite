@@ -10,3 +10,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.cave-adventure-container {
+  display: flex;
+  height: 716;
+  width: 606px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 23px;
+  margin-left: 77px;
+}
+.screen.cave-adventure {
+  display: flex;
+  justify-content: start;
+}
+
+img.cave-snow {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 281px;
+  right: 121px;
+}
