@@ -26,20 +26,39 @@ gsap
     0
   );
 
-// scroll horizontal
+// scroll horizontal + parallax
 
-gsap.to(".screens", {
-  scrollTrigger: {
-    trigger: ".scroll-horizontal",
-    start: "top top",
-    end: "+=1400%",
-    pin: true,
-    scrub: true,
-    markers: true,
-  },
-  x: "-92.8%",
-  ease: "sine.inOut",
-});
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".scroll-horizontal",
+      start: "top top",
+      end: "+=1400%",
+      pin: true,
+      scrub: true,
+      markers: true,
+    },
+  })
+  .to(".screens", {
+    x: "-14.28%",
+    ease: "sine.inOut",
+  })
+  .to(".parallax-object.background", {
+    x: "-3vw",
+    ease: "quad.inOut",
+  })
+  .to(".parallax-object.sabre", {
+    x: "-6vw",
+    ease: "quad.inOut",
+  })
+  .to(".parallax-object.tree", {
+    x: "-12vw",
+    ease: "quad.inOut",
+  })
+  .to(".screens", {
+    x: "-92.85%",
+    ease: "sine.inOut",
+  });
 
 // walking
 
@@ -60,4 +79,9 @@ gsap.to([".walking-2", ".walking-3", ".walking-4"], {
   },
 });
 
-// parallax
+// Initialisation + gestion du resize
+// window.addEventListener("load", init);
+// window.addEventListener("resize", () => {
+//   clearTimeout(window._parallaxResizeTimeout);
+//   window._parallaxResizeTimeout = setTimeout(init, 150);
+// });

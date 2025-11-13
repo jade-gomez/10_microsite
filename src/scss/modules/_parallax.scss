@@ -1,0 +1,43 @@
+.parallax-box {
+  position: relative;
+  width: 834px;
+  height: 618px;
+  overflow: hidden;
+  border: 9px solid #000;
+}
+
+.parallax-object.background {
+  position: absolute;
+  z-index: 1;
+  width: 110%;
+}
+
+.parallax-object.background img {
+  width: 120%;
+}
+
+.parallax-object {
+  position: absolute;
+}
+
+.sabre {
+  z-index: 2;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.sabre img {
+  height: 100%;
+}
+
+.tree {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.tree img {
+  height: 100%;
+}
